@@ -10,6 +10,6 @@ import UIKit
 final class DiscoveryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .yellow
     }
 }
