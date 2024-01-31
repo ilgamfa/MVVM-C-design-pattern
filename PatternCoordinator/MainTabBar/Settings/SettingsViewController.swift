@@ -39,6 +39,7 @@ final class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Settings"
         
         setupUI()
         configLoginButtonAction()

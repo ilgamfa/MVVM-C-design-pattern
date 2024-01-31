@@ -27,7 +27,7 @@ final class MainTabBarCoordinator: BaseCoordinator {
     
     func start() {
         let mainTabBarController = factory.makeTabBarController()
-        
+
         settingsCoordinator = factory.makeSettingsCoordinator(delegate: self)
         newsCoordinator = factory.makeNewsCoordinator()
         discoveryCoordinator = factory.makeDiscoveryCoordinator()
@@ -37,8 +37,13 @@ final class MainTabBarCoordinator: BaseCoordinator {
               let discoveryCoordinator
         else { return }
         
-        mainTabBarController.viewControllers = [newsCoordinator.navigationController, discoveryCoordinator.navigationController , settingsCoordinator.navigationController]
+        mainTabBarController.viewControllers = [
+            newsCoordinator.navigationController,
+            discoveryCoordinator.navigationController,
+            settingsCoordinator.navigationController
+        ]
         
+        navigationController.navigationBar.isHidden = true
         navigationController.pushViewController(mainTabBarController, animated: false)
         
         settingsCoordinator.start()

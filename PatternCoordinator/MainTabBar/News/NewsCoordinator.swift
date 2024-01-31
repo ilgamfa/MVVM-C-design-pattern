@@ -10,6 +10,7 @@ import UIKit
 final class NewsCoordinator: BaseCoordinator {
     var navigationController: UINavigationController
     private var factory: NewsFactory
+    private var newsDetailCoordinator: BaseCoordinator?
     
     init(navigationController: UINavigationController, factory: NewsFactory) {
         self.navigationController = navigationController
@@ -17,10 +18,21 @@ final class NewsCoordinator: BaseCoordinator {
     }
     
     func start() {
-        let controller = factory.makeNewsController()
+        let controller = factory.makeNewsController(coordinatorDelegate: self)
         navigationController.navigationBar.prefersLargeTitles = true
         navigationController.pushViewController(controller, animated: true)
         factory.makeItemTabBar(navigation: navigationController)
     }
+    
+    func startNewsDetailCoordinator() {
+        newsDetailCoordinator = factory.makeNewsDetailCoordinator(navigationController: navigationController)
+        guard let newsDetailCoordinator else { return }
+        newsDetailCoordinator.start()
+    }
+}
 
+extension NewsCoordinator: NewsDetailViewControllerCoordinatorDelegate {
+    func startNewsDetailViewController() {
+        startNewsDetailCoordinator()
+    }
 }
