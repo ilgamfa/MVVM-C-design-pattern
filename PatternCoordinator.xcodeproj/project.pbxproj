@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB1C77612B693BE900D33112 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C77602B693BE900D33112 /* NewsDetailViewController.swift */; };
+		BB1C77632B693C1B00D33112 /* NewsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C77622B693C1B00D33112 /* NewsDetailViewModel.swift */; };
+		BB1C77652B693C1E00D33112 /* NewsDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C77642B693C1E00D33112 /* NewsDetailCoordinator.swift */; };
+		BB1C77672B693C3A00D33112 /* NewsDetailFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C77662B693C3A00D33112 /* NewsDetailFactory.swift */; };
 		BB9B13442B5ADC230004BAA2 /* MainTabBarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B13432B5ADC230004BAA2 /* MainTabBarFactory.swift */; };
 		BB9B13462B5ADC7D0004BAA2 /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B13452B5ADC7D0004BAA2 /* MainTabBarCoordinator.swift */; };
 		BB9B13492B5ADE9A0004BAA2 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B13482B5ADE9A0004BAA2 /* SettingsCoordinator.swift */; };
@@ -38,6 +42,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB1C77602B693BE900D33112 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		BB1C77622B693C1B00D33112 /* NewsDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewModel.swift; sourceTree = "<group>"; };
+		BB1C77642B693C1E00D33112 /* NewsDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailCoordinator.swift; sourceTree = "<group>"; };
+		BB1C77662B693C3A00D33112 /* NewsDetailFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailFactory.swift; sourceTree = "<group>"; };
 		BB9B13432B5ADC230004BAA2 /* MainTabBarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarFactory.swift; sourceTree = "<group>"; };
 		BB9B13452B5ADC7D0004BAA2 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
 		BB9B13482B5ADE9A0004BAA2 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
@@ -81,6 +89,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB1C775F2B693BCE00D33112 /* NewsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BB1C77602B693BE900D33112 /* NewsDetailViewController.swift */,
+				BB1C77622B693C1B00D33112 /* NewsDetailViewModel.swift */,
+				BB1C77642B693C1E00D33112 /* NewsDetailCoordinator.swift */,
+				BB1C77662B693C3A00D33112 /* NewsDetailFactory.swift */,
+			);
+			path = NewsDetail;
+			sourceTree = "<group>";
+		};
 		BB9B13402B5ADBA90004BAA2 /* MainTabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +138,7 @@
 		BB9B13532B5AEE8B0004BAA2 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				BB1C775F2B693BCE00D33112 /* NewsDetail */,
 				BB9B13542B5AEED60004BAA2 /* NewsViewController.swift */,
 				BB9B13562B5AEEE40004BAA2 /* NewsViewModel.swift */,
 				BB9B13582B5AEEFA0004BAA2 /* NewsCoordinator.swift */,
@@ -243,10 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1C77632B693C1B00D33112 /* NewsDetailViewModel.swift in Sources */,
 				BB9B13612B5AF45A0004BAA2 /* DiscoveryViewModel.swift in Sources */,
 				BBC92CA42B5AAE83009262CF /* LoginViewController.swift in Sources */,
 				BBC92C9F2B5AABFD009262CF /* AppDIContainer.swift in Sources */,
 				BB9B13632B5AF4620004BAA2 /* DiscoveryFactory.swift in Sources */,
+				BB1C77652B693C1E00D33112 /* NewsDetailCoordinator.swift in Sources */,
+				BB1C77672B693C3A00D33112 /* NewsDetailFactory.swift in Sources */,
 				BB9B13512B5AE8DB0004BAA2 /* MainTabBarController.swift in Sources */,
 				BB9B135B2B5AEF020004BAA2 /* NewsFactory.swift in Sources */,
 				BBC92CA82B5AB034009262CF /* LoginViewModel.swift in Sources */,
@@ -259,6 +282,7 @@
 				BB9B134F2B5ADF7D0004BAA2 /* SettingsFactory.swift in Sources */,
 				BB9B134B2B5ADEB40004BAA2 /* SettingsViewController.swift in Sources */,
 				BB9B134D2B5ADF6F0004BAA2 /* SettingsViewModel.swift in Sources */,
+				BB1C77612B693BE900D33112 /* NewsDetailViewController.swift in Sources */,
 				BB9B13442B5ADC230004BAA2 /* MainTabBarFactory.swift in Sources */,
 				BBC92C7F2B5973E5009262CF /* SceneDelegate.swift in Sources */,
 				BB9B13592B5AEEFA0004BAA2 /* NewsCoordinator.swift in Sources */,

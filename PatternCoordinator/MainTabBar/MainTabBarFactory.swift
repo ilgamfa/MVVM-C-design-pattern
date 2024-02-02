@@ -12,7 +12,6 @@ struct MainTabBarFactory {
     
     func makeTabBarController() -> UITabBarController {
         let mainTabBarController = MainTabBarController()
-        mainTabBarController.title = "Main"
         return mainTabBarController
     }
     
