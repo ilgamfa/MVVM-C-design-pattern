@@ -18,6 +18,7 @@ final class MainTabBarCoordinator: BaseCoordinator {
     var settingsCoordinator: BaseCoordinator?
     var newsCoordinator: BaseCoordinator?
     var discoveryCoordinator: BaseCoordinator?
+    var courtsCoordinator: BaseCoordinator?
     
     init(navigationController: UINavigationController, factory: MainTabBarFactory, delegate: MainTabBarCoordinatorDelegate) {
         self.navigationController = navigationController
@@ -31,14 +32,17 @@ final class MainTabBarCoordinator: BaseCoordinator {
         settingsCoordinator = factory.makeSettingsCoordinator(delegate: self)
         newsCoordinator = factory.makeNewsCoordinator()
         discoveryCoordinator = factory.makeDiscoveryCoordinator()
+        courtsCoordinator = factory.makeCourtsCoordinator()
 
         guard let settingsCoordinator,
               let newsCoordinator,
-              let discoveryCoordinator
+              let discoveryCoordinator,
+              let courtsCoordinator
         else { return }
         
         mainTabBarController.viewControllers = [
             newsCoordinator.navigationController,
+            courtsCoordinator.navigationController,
             discoveryCoordinator.navigationController,
             settingsCoordinator.navigationController
         ]
@@ -49,6 +53,7 @@ final class MainTabBarCoordinator: BaseCoordinator {
         settingsCoordinator.start()
         newsCoordinator.start()
         discoveryCoordinator.start()
+        courtsCoordinator.start()
     }
 }
 
