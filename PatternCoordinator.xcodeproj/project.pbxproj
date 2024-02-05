@@ -11,6 +11,10 @@
 		BB1C77632B693C1B00D33112 /* NewsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C77622B693C1B00D33112 /* NewsDetailViewModel.swift */; };
 		BB1C77652B693C1E00D33112 /* NewsDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C77642B693C1E00D33112 /* NewsDetailCoordinator.swift */; };
 		BB1C77672B693C3A00D33112 /* NewsDetailFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C77662B693C3A00D33112 /* NewsDetailFactory.swift */; };
+		BB1C776A2B715DC400D33112 /* CourtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C77692B715DC400D33112 /* CourtsViewController.swift */; };
+		BB1C776C2B715DCB00D33112 /* CourtsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C776B2B715DCB00D33112 /* CourtsViewModel.swift */; };
+		BB1C776E2B715DD500D33112 /* CourtsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C776D2B715DD500D33112 /* CourtsCoordinator.swift */; };
+		BB1C77702B715DE500D33112 /* CourtsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C776F2B715DE500D33112 /* CourtsFactory.swift */; };
 		BB9B13442B5ADC230004BAA2 /* MainTabBarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B13432B5ADC230004BAA2 /* MainTabBarFactory.swift */; };
 		BB9B13462B5ADC7D0004BAA2 /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B13452B5ADC7D0004BAA2 /* MainTabBarCoordinator.swift */; };
 		BB9B13492B5ADE9A0004BAA2 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B13482B5ADE9A0004BAA2 /* SettingsCoordinator.swift */; };
@@ -46,6 +50,10 @@
 		BB1C77622B693C1B00D33112 /* NewsDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewModel.swift; sourceTree = "<group>"; };
 		BB1C77642B693C1E00D33112 /* NewsDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailCoordinator.swift; sourceTree = "<group>"; };
 		BB1C77662B693C3A00D33112 /* NewsDetailFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailFactory.swift; sourceTree = "<group>"; };
+		BB1C77692B715DC400D33112 /* CourtsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtsViewController.swift; sourceTree = "<group>"; };
+		BB1C776B2B715DCB00D33112 /* CourtsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtsViewModel.swift; sourceTree = "<group>"; };
+		BB1C776D2B715DD500D33112 /* CourtsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtsCoordinator.swift; sourceTree = "<group>"; };
+		BB1C776F2B715DE500D33112 /* CourtsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtsFactory.swift; sourceTree = "<group>"; };
 		BB9B13432B5ADC230004BAA2 /* MainTabBarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarFactory.swift; sourceTree = "<group>"; };
 		BB9B13452B5ADC7D0004BAA2 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
 		BB9B13482B5ADE9A0004BAA2 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
@@ -100,9 +108,21 @@
 			path = NewsDetail;
 			sourceTree = "<group>";
 		};
+		BB1C77682B715DB600D33112 /* Courts */ = {
+			isa = PBXGroup;
+			children = (
+				BB1C77692B715DC400D33112 /* CourtsViewController.swift */,
+				BB1C776B2B715DCB00D33112 /* CourtsViewModel.swift */,
+				BB1C776D2B715DD500D33112 /* CourtsCoordinator.swift */,
+				BB1C776F2B715DE500D33112 /* CourtsFactory.swift */,
+			);
+			path = Courts;
+			sourceTree = "<group>";
+		};
 		BB9B13402B5ADBA90004BAA2 /* MainTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				BB1C77682B715DB600D33112 /* Courts */,
 				BB9B13532B5AEE8B0004BAA2 /* News */,
 				BB9B13522B5AEE6A0004BAA2 /* Discovery */,
 				BB9B13472B5ADE8A0004BAA2 /* Settings */,
@@ -268,6 +288,7 @@
 				BBC92CA42B5AAE83009262CF /* LoginViewController.swift in Sources */,
 				BBC92C9F2B5AABFD009262CF /* AppDIContainer.swift in Sources */,
 				BB9B13632B5AF4620004BAA2 /* DiscoveryFactory.swift in Sources */,
+				BB1C776A2B715DC400D33112 /* CourtsViewController.swift in Sources */,
 				BB1C77652B693C1E00D33112 /* NewsDetailCoordinator.swift in Sources */,
 				BB1C77672B693C3A00D33112 /* NewsDetailFactory.swift in Sources */,
 				BB9B13512B5AE8DB0004BAA2 /* MainTabBarController.swift in Sources */,
@@ -278,6 +299,7 @@
 				BBC92C7D2B5973E5009262CF /* AppDelegate.swift in Sources */,
 				BB9B13572B5AEEE40004BAA2 /* NewsViewModel.swift in Sources */,
 				BB9B135F2B5AF4530004BAA2 /* DiscoveryCoordinator.swift in Sources */,
+				BB1C776E2B715DD500D33112 /* CourtsCoordinator.swift in Sources */,
 				BB9B13552B5AEED60004BAA2 /* NewsViewController.swift in Sources */,
 				BB9B134F2B5ADF7D0004BAA2 /* SettingsFactory.swift in Sources */,
 				BB9B134B2B5ADEB40004BAA2 /* SettingsViewController.swift in Sources */,
@@ -290,6 +312,8 @@
 				BB9B13462B5ADC7D0004BAA2 /* MainTabBarCoordinator.swift in Sources */,
 				BB9B13492B5ADE9A0004BAA2 /* SettingsCoordinator.swift in Sources */,
 				BBC92C962B5AA817009262CF /* BaseCoordinator.swift in Sources */,
+				BB1C776C2B715DCB00D33112 /* CourtsViewModel.swift in Sources */,
+				BB1C77702B715DE500D33112 /* CourtsFactory.swift in Sources */,
 				BBC92C9B2B5AAB59009262CF /* AppFactory.swift in Sources */,
 				BBC92CA22B5AAE04009262CF /* LoginFactory.swift in Sources */,
 				BBC92C9D2B5AAB82009262CF /* Auth.swift in Sources */,

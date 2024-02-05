@@ -35,4 +35,11 @@ struct MainTabBarFactory {
         
         return DiscoveryCoordinator(navigationController: navigation, factory: factory)
     }
+    
+    func makeCourtsCoordinator() -> BaseCoordinator {
+        let factory = CourtsFactory()
+        let navigation = UINavigationController()
+        
+        return CourtsCoordinator(navigationController: navigation, factory: factory)
+    }
 }
