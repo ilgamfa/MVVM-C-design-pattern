@@ -1,5 +1,5 @@
 //
-//  CourtsSheetCoordinator.swift
+//  CourtsMapCoordinator.swift
 //  PatternCoordinator
 //
 //  Created by Ильгам Ахматдинов on 05.02.2024.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-final class CourtsSheetCoordinator: BaseCoordinator {
+final class CourtsMapCoordinator: BaseCoordinator {
     var navigationController: UINavigationController
-    private var factory: CourtsSheetFactory
+    private var factory: CourtsMapFactory
     
     
-    init(navigationController: UINavigationController, factory: CourtsSheetFactory) {
+    init(navigationController: UINavigationController, factory: CourtsMapFactory) {
         self.navigationController = navigationController
         self.factory = factory
     }

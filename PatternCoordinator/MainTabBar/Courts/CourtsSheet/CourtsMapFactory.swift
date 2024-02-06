@@ -1,5 +1,5 @@
 //
-//  CourtsSheetFactory.swift
+//  CourtsMapFactory.swift
 //  PatternCoordinator
 //
 //  Created by Ильгам Ахматдинов on 05.02.2024.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-struct CourtsSheetFactory {
+struct CourtsMapFactory {
     func makeCourtsSheetController() -> UIViewController {
-        CourtsSheetViewController()
+        CourtsMapViewController()
     }
 }
 
