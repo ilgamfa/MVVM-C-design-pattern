@@ -9,6 +9,6 @@ import UIKit
 
 struct NewsDetailFactory {
     func makeNewsDetailController() -> UIViewController {
-        return NewsDetailViewController()
+        NewsDetailViewController()
     }
 }

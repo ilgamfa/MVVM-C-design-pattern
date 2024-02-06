@@ -47,6 +47,8 @@ final class MainTabBarCoordinator: BaseCoordinator {
             settingsCoordinator.navigationController
         ]
         
+        mainTabBarController.tabBar.scrollEdgeAppearance = UITabBarAppearance()
+
         navigationController.navigationBar.isHidden = true
         navigationController.pushViewController(mainTabBarController, animated: false)
         

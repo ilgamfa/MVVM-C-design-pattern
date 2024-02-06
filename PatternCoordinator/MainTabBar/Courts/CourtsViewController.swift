@@ -6,13 +6,14 @@
 //
 
 import UIKit
-import MapKit
 
 final class CourtsViewController: UIViewController {
-    lazy var mapView: MKMapView = {
-        let map = MKMapView()
-        map.translatesAutoresizingMaskIntoConstraints = false
-        return map
+    private let mapButton: UIButton = {
+        let button = UIButton()
+        button.configuration = .filled()
+        button.setTitle("Map", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
     }()
     
     override func viewDidLoad() {
@@ -21,14 +22,25 @@ final class CourtsViewController: UIViewController {
         title = "Courts"
         
         setupUI()
+        configLoginButtonAction()
+    }
+    
+    private func configLoginButtonAction() {
+        let action = UIAction { [weak self] _ in
+            let vc = CourtsMapViewController()
+            vc.modalPresentationStyle = .fullScreen
+            self?.navigationController?.present(vc, animated: true)
+        }
+        
+        mapButton.addAction(action, for: .touchUpInside)
     }
     
     private func setupUI() {
-        view.addSubview(mapView)
+        view.addSubview(mapButton)
 
-        mapView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        mapView.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor).isActive = true
-        mapView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        mapView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        NSLayoutConstraint.activate([
+            mapButton.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -40),
+            mapButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
     }
 }
