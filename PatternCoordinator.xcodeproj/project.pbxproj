@@ -15,6 +15,10 @@
 		BB1C776C2B715DCB00D33112 /* CourtsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C776B2B715DCB00D33112 /* CourtsViewModel.swift */; };
 		BB1C776E2B715DD500D33112 /* CourtsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C776D2B715DD500D33112 /* CourtsCoordinator.swift */; };
 		BB1C77702B715DE500D33112 /* CourtsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C776F2B715DE500D33112 /* CourtsFactory.swift */; };
+		BB1C77732B716BD400D33112 /* CourtsSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C77722B716BD400D33112 /* CourtsSheetViewController.swift */; };
+		BB1C77752B716BEF00D33112 /* CourtsSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C77742B716BEF00D33112 /* CourtsSheetViewModel.swift */; };
+		BB1C77772B716C0400D33112 /* CourtsSheetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C77762B716C0400D33112 /* CourtsSheetCoordinator.swift */; };
+		BB1C77792B716C0900D33112 /* CourtsSheetFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C77782B716C0900D33112 /* CourtsSheetFactory.swift */; };
 		BB9B13442B5ADC230004BAA2 /* MainTabBarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B13432B5ADC230004BAA2 /* MainTabBarFactory.swift */; };
 		BB9B13462B5ADC7D0004BAA2 /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B13452B5ADC7D0004BAA2 /* MainTabBarCoordinator.swift */; };
 		BB9B13492B5ADE9A0004BAA2 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B13482B5ADE9A0004BAA2 /* SettingsCoordinator.swift */; };
@@ -54,6 +58,10 @@
 		BB1C776B2B715DCB00D33112 /* CourtsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtsViewModel.swift; sourceTree = "<group>"; };
 		BB1C776D2B715DD500D33112 /* CourtsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtsCoordinator.swift; sourceTree = "<group>"; };
 		BB1C776F2B715DE500D33112 /* CourtsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtsFactory.swift; sourceTree = "<group>"; };
+		BB1C77722B716BD400D33112 /* CourtsSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtsSheetViewController.swift; sourceTree = "<group>"; };
+		BB1C77742B716BEF00D33112 /* CourtsSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtsSheetViewModel.swift; sourceTree = "<group>"; };
+		BB1C77762B716C0400D33112 /* CourtsSheetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtsSheetCoordinator.swift; sourceTree = "<group>"; };
+		BB1C77782B716C0900D33112 /* CourtsSheetFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtsSheetFactory.swift; sourceTree = "<group>"; };
 		BB9B13432B5ADC230004BAA2 /* MainTabBarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarFactory.swift; sourceTree = "<group>"; };
 		BB9B13452B5ADC7D0004BAA2 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
 		BB9B13482B5ADE9A0004BAA2 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
@@ -111,12 +119,24 @@
 		BB1C77682B715DB600D33112 /* Courts */ = {
 			isa = PBXGroup;
 			children = (
+				BB1C77712B716BB800D33112 /* CourtsSheet */,
 				BB1C77692B715DC400D33112 /* CourtsViewController.swift */,
 				BB1C776B2B715DCB00D33112 /* CourtsViewModel.swift */,
 				BB1C776D2B715DD500D33112 /* CourtsCoordinator.swift */,
 				BB1C776F2B715DE500D33112 /* CourtsFactory.swift */,
 			);
 			path = Courts;
+			sourceTree = "<group>";
+		};
+		BB1C77712B716BB800D33112 /* CourtsSheet */ = {
+			isa = PBXGroup;
+			children = (
+				BB1C77722B716BD400D33112 /* CourtsSheetViewController.swift */,
+				BB1C77762B716C0400D33112 /* CourtsSheetCoordinator.swift */,
+				BB1C77782B716C0900D33112 /* CourtsSheetFactory.swift */,
+				BB1C77742B716BEF00D33112 /* CourtsSheetViewModel.swift */,
+			);
+			path = CourtsSheet;
 			sourceTree = "<group>";
 		};
 		BB9B13402B5ADBA90004BAA2 /* MainTabBar */ = {
@@ -285,6 +305,7 @@
 			files = (
 				BB1C77632B693C1B00D33112 /* NewsDetailViewModel.swift in Sources */,
 				BB9B13612B5AF45A0004BAA2 /* DiscoveryViewModel.swift in Sources */,
+				BB1C77732B716BD400D33112 /* CourtsSheetViewController.swift in Sources */,
 				BBC92CA42B5AAE83009262CF /* LoginViewController.swift in Sources */,
 				BBC92C9F2B5AABFD009262CF /* AppDIContainer.swift in Sources */,
 				BB9B13632B5AF4620004BAA2 /* DiscoveryFactory.swift in Sources */,
@@ -303,11 +324,14 @@
 				BB9B13552B5AEED60004BAA2 /* NewsViewController.swift in Sources */,
 				BB9B134F2B5ADF7D0004BAA2 /* SettingsFactory.swift in Sources */,
 				BB9B134B2B5ADEB40004BAA2 /* SettingsViewController.swift in Sources */,
+				BB1C77772B716C0400D33112 /* CourtsSheetCoordinator.swift in Sources */,
 				BB9B134D2B5ADF6F0004BAA2 /* SettingsViewModel.swift in Sources */,
 				BB1C77612B693BE900D33112 /* NewsDetailViewController.swift in Sources */,
+				BB1C77792B716C0900D33112 /* CourtsSheetFactory.swift in Sources */,
 				BB9B13442B5ADC230004BAA2 /* MainTabBarFactory.swift in Sources */,
 				BBC92C7F2B5973E5009262CF /* SceneDelegate.swift in Sources */,
 				BB9B13592B5AEEFA0004BAA2 /* NewsCoordinator.swift in Sources */,
+				BB1C77752B716BEF00D33112 /* CourtsSheetViewModel.swift in Sources */,
 				BB9B135D2B5AEF820004BAA2 /* DiscoveryViewController.swift in Sources */,
 				BB9B13462B5ADC7D0004BAA2 /* MainTabBarCoordinator.swift in Sources */,
 				BB9B13492B5ADE9A0004BAA2 /* SettingsCoordinator.swift in Sources */,
